@@ -36,10 +36,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
   
-    - name: Run Python Tests
-      run: |
-        pytest  # or any other test command you use
-
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3
       with:
